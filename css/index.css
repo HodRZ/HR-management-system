@@ -1,20 +1,31 @@
 /* basic styling  */
+:root {
+    --background1: #fff;
+    --background2: #e5e5e5;
+    --text: #000;
+    --background3: #ced4da;
+    --accent1: #fca311;
+    --accent2: #14213d;
+    --accent3: #d62828;
+}
+
 a,
 a:active {
     text-decoration: none;
     color: inherit;
 }
 
+
 body {
-    background-color: #f4f1de;
-    color: #3D405B;
+    background-color: var(--background2);
+    color: var(--text);
 }
 
 /* nav bar grid */
 .list {
-    color: #f4f1de;
+    color: var(--background1);
     margin: 0p;
-    background-color: #3D405B;
+    background-color: var(--accent2);
     list-style: none;
     display: grid;
     padding: 0px;
@@ -40,8 +51,51 @@ body {
 
 
 
-/* conetnt grid  */
+/* content flex */
+
 .content {
+    background-color: var(--background2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--background3);
+    color: var(--text);
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 15px;
+    width: clamp(5rem, 50%, 15rem);
+}
+
+.emoloyeeName {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.employeeImg {
+    width: clamp(1rem, 50%, 10rem);
+    height: auto;
+    margin: 0 25%;
+    padding-top: 1rem;
+}
+
+.info {
+    list-style: none;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+/* conetnt grid  */
+/* .content {
     display: grid;
     grid-template-columns: repeat(5, 6fr);
     grid-template-rows: auto;
@@ -72,24 +126,11 @@ body {
     margin-left: 0.5rem;
     border: 1px solid #3D405B;
     /* justify-self: center; */
-    align-self: stretch;
-}
-
-td,
-th {
-    border: 1px solid #3D405B;
-}
-
-td {
-    padding-left: 1em;
-}
+/* align-self: stretch;
+} */
 
 .address {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* justify-content: center; */
-}
-
-#form {
-    border: none;
 }
