@@ -83,13 +83,13 @@ Employee.prototype.calcSalary = function () {
 }
 
 
-const ghazi = new Employee('Ghazi Samer', 'Administration', 'Senior', './../assets/Ghazi.png')
-const lana = new Employee('Lana Ali', 'Finance', 'Senior', './../assets/Lana.png')
-const tamara = new Employee('Tamara Ayoub', 'Marketing', 'Senior', './../assets/Tamara.png')
-const safi = new Employee('Safi Walid', 'Administration', 'Mid-Senior', './../assets/Safi.png')
-const omar = new Employee('Omar Zaid', 'Development', 'Senior', './../assets/Omar.png')
-const rana = new Employee('Rana Saleh', 'Development', 'Junior', './../assets/Rana.png')
-const hadi = new Employee('Hadi Ahmad', 'Finance', 'Mid-Senior', './../assets/Hadi.png')
+const ghazi = new Employee('Ghazi Samer', 'Administration', 'Senior', './assets/Ghazi.png')
+const lana = new Employee('Lana Ali', 'Finance', 'Senior', './assets/Lana.png')
+const tamara = new Employee('Tamara Ayoub', 'Marketing', 'Senior', './assets/Tamara.png')
+const safi = new Employee('Safi Walid', 'Administration', 'Mid-Senior', './assets/Safi.png')
+const omar = new Employee('Omar Zaid', 'Development', 'Senior', './assets/Omar.png')
+const rana = new Employee('Rana Saleh', 'Development', 'Junior', './assets/Rana.png')
+const hadi = new Employee('Hadi Ahmad', 'Finance', 'Mid-Senior', './assets/Hadi.png')
 
 
 
