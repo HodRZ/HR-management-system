@@ -78,8 +78,8 @@ Employee.prototype.calcSalary = function () {
     if (this.level === 'junior') {
         return (Math.floor(Math.random() * (1000 - 500 + 1)) + 500)
     } else if (this.level === 'mid-senior') {
-        return (Math.floor(Math.random() * (1500 - 1000 + 1)) + 500)
-    } else return (Math.floor(Math.random() * (2000 - 1500 + 1)) + 500)
+        return (Math.floor(Math.random() * (1500 - 1000 + 1)) + 1000)
+    } else return (Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500)
 }
 
 
